@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit = no"
+    />
+
+    <title>UG | Department Of Computer Science</title>
+
+    <link rel="stylesheet" href="website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="website.html"
+          ><img src="images and videos/comScience_logo.png" alt="image"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <b>
+              <li><a href="website.html">HOME</a></li>
+              <li><a href="website FACULTY.html">FACULTY</a></li>
+              <li><a href="website BLOG.html">BLOG</a></li>
+              <li><a href="website ABOUT.html">ABOUT</a></li>
+              <li><a href="website RESEARCH GROUP.html">RESEARCH GROUP</a></li>
+              <li><a href="website CONTACT.html">CONTACT</a></li>
+            </b>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!----contact us-->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254105.14546827727!2d-0.3519165303079453!3d5.656172801920918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d35c7bc40fd%3A0x760b35f47b34835d!2sComputer%20Science%20Department%2C%20University%20of%20Ghana!5e0!3m2!1sen!2sgh!4v1700681565842!5m2!1sen!2sgh"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Botanical Gardens Rd, Accra</h5>
+              <p>University of Ghana, legon, LG-365-3652</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+233 55 464 0252</h5>
+              <p>Monday to Friday, 10AM to 3pm</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>info@doanane@st.ug.edu.gh</h5>
+              <p>Email us our query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="Computer-science red-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>You Can also follow us on our various social media.</p>
+      <div class="icons" id="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <p>
+        Made with <i class="fa-solid fa-heart"></i> by the computer science
+        department of University of Ghana.
+      </p>
+    </section>
+
+    <!--javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

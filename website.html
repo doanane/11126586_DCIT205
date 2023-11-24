@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit = no"
+    />
+
+    <title>UG | Department Of Computer Science</title>
+
+    <link rel="stylesheet" href="website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="website.html"
+          ><img src="images and videos/comScience_logo.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <b>
+              <li><a href="website.html">HOME</a></li>
+              <li><a href="website FACULTY.html">FACULTY</a></li>
+              <li><a href="website BLOG.html">BLOG</a></li>
+              <li><a href="website ABOUT.html">ABOUT</a></li>
+              <li><a href="website RESEARCH GROUP.html">RESEARCH GROUP</a></li>
+              <li><a href="website CONTACT.html">CONTACT</a></li>
+            </b>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>
+          YOUR RIGHT PLACE INTO THE GATEWAY OF WORLD CLASS COMPUTER SCIENCE
+          EDUCATION
+        </h1>
+        <br />
+        <a href="" class="Computer-science">Visit To Know More</a>
+      </div>
+    </section>
+
+    <!-- overview -->
+
+    <section class="overview">
+      <h1>overview</h1>
+      <p>Underlying Prorammes</p>
+
+      <div class="row">
+        <div class="overview-col">
+          <h3>Short Courses</h3>
+          <p>
+            Are you ready to take a leap forward in your personal or
+            professional growth? Our platform is thrilled to present an
+            unparalleled collection of short courses, meticulously crafted to
+            empower you with knowledge, skills, and confidence...
+            <br />
+            <a href="#">read more</a>
+          </p>
+        </div>
+        <div class="overview-col">
+          <h3>Undergraduate Programme</h3>
+          <p>
+            Are you ready to embark on a transformative academic journey that
+            will shape your future? Look no further! Our platform is thrilled to
+            present a wide array of undergraduate courses designed to equip you
+            with the knowledge, skills, and opportunities you need to excel in
+            your chosen field.
+            <br />
+            <a href="#">read more</a>
+          </p>
+        </div>
+        <div class="overview-col">
+          <h3>MPhil and Msc programme</h3>
+          <p>
+            Dear Aspiring Scholars, Are you eager to delve deeper into your
+            field of interest and pave the way for a rewarding academic journey?
+            Your search ends here! Our platform takes pride in presenting a
+            distinguished selection of MPhil and MSc programs meticulously
+            designed to propel you towards academic excellence and professional
+            fulfillment.
+            <br />
+            <a href="#">read more</a>
+          </p>
+        </div>
+        <div class="overview-col">
+          <h3>PhD Programme</h3>
+          <p>
+            Dear Esteemed Scholars, Are you ready to embark on an extraordinary
+            academic journey that defines the pinnacle of scholarly pursuit?
+            Your quest for academic enrichment ends here! Our platform proudly
+            presents a distinguished array of PhD programs meticulously crafted
+            to fuel your passion for knowledge and propel you towards
+            groundbreaking research and academic leadership.
+            <br />
+            <a href="#">read more</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>You Can also follow us on our various social media.</p>
+      <div class="icons" id="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <p>
+        Made with <i class="fa-solid fa-heart"></i> by the computer science
+        department of University of Ghana.
+      </p>
+    </section>
+
+    <!--javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

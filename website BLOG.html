@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit = no"
+    />
+
+    <title>UG | Department Of Computer Science</title>
+
+    <link rel="stylesheet" href="website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="website.html"
+          ><img src="images and videos/comScience_logo.png" alt text="images"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <b>
+              <li><a href="website.html">HOME</a></li>
+              <li><a href="website FACULTY.html">FACULTY</a></li>
+              <li><a href="website BLOG.html">BLOG</a></li>
+              <li><a href="website ABOUT.html">ABOUT</a></li>
+              <li><a href="website RESEARCH GROUP.html">RESEARCH GROUP</a></li>
+              <li><a href="website CONTACT.html">CONTACT</a></li>
+            </b>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificate & online programs</h1>
+    </section>
+
+    <!------blog page content----->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images and videos/images7.jpeg" alt text="images" />
+          <h2>Our Certificate & online programs</h2>
+          <p>
+            At our institution, we offer a diverse range of certificate and
+            online programs designed to cater to the modern learner. Our
+            certificate programs are meticulously crafted by industry experts,
+            providing comprehensive knowledge and practical skills essential for
+            professional growth. With our online programs, we aim to make
+            quality education accessible to all, offering flexibility and
+            convenience without compromising on academic excellence. Whether
+            you're looking to enhance your career prospects or deepen your
+            understanding in a particular field, our certificate and online
+            programs are tailored to meet your aspirations while accommodating
+            your busy lifestyle. Join us on a learning journey that prioritizes
+            innovation, expertise, and personalized development.
+          </p>
+          <br />
+          <p>
+            Dive into a world of opportunity with our robust array of
+            certificate and online programs, meticulously designed to empower
+            individuals seeking to advance their careers or delve deeper into
+            specialized subjects. Our certificate programs offer in-depth,
+            hands-on learning experiences, equipping you with the skills
+            demanded in today's competitive industries. Meanwhile, our online
+            programs provide a flexible and dynamic learning environment,
+            allowing you to balance your education with other commitments. With
+            a commitment to academic excellence and industry relevance, our
+            programs foster a supportive community and encourage interactive
+            learning, ensuring that you emerge with not just a certificate but
+            also a wealth of knowledge and practical expertise. Embrace the
+            future of education with us, where innovation meets education to
+            shape your success.
+          </p>
+          <br />
+          <p>
+            Discover an expansive range of certificate and online programs
+            tailored to suit your learning needs and professional aspirations.
+            Our certificate programs are curated by seasoned experts, delivering
+            comprehensive insights and hands-on training essential for excelling
+            in today's competitive landscape. Meanwhile, our online programs
+            offer the flexibility to learn at your own pace, ensuring that
+            education fits seamlessly into your schedule. We pride ourselves on
+            delivering top-notch quality education, combining academic rigor
+            with real-world applicability. Through interactive lectures,
+            engaging resources, and a supportive learning environment, our
+            programs aim to equip you not just with a certificate, but with the
+            skills and confidence to thrive in your chosen field. Experience the
+            transformative power of education with our innovative approach that
+            fosters growth and empowers success.
+          </p>
+
+          <div class="blog-right">
+            <h3>Post Category</h3>
+            <div>
+              <span>Data Analysis</span>
+              <span>29</span>
+            </div>
+            <div>
+              <span>Business Analysis</span>
+              <span>25</span>
+            </div>
+            <div>
+              <span>mathematical Science</span>
+              <span>20</span>
+            </div>
+            <div>
+              <span>Data Science</span>
+              <span>26</span>
+            </div>
+            <div>
+              <span>Web Developer</span>
+              <span>23</span>
+            </div>
+            <div>
+              <span>Computer Science</span>
+              <span>28</span>
+            </div>
+          </div>
+        </div>
+        <div class="comment-box"></div>
+
+        <h3>Leave a comment</h3>
+
+        <form class="comment-form">
+          <input type="text" placeholder="Enter Name" />
+          <input type="email" placeholder="Enter Email" />
+          <textarea rows="5" placeholder="Your comment"> </textarea>
+          <button type="submit" class="Computer-science red-btn">
+            POST COMMENT
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!----footer-->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>You Can also follow us on our various social media.</p>
+      <div class="icons" id="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <p>
+        Made with <i class="fa-solid fa-heart"></i> by the computer science
+        department of University of Ghana.
+      </p>
+    </section>
+
+    <!--javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
