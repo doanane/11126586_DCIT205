@@ -381,3 +381,68 @@ background: #f0f0f0;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+.apply-button{
+  color: blue;
+}
+.apply-button p{
+  padding: 15px 0 25px;
+}
+.apply-button ::after{
+  flex-basis: 31%;
+          background: #fff3f3;
+          border-radius: 10px;
+          margin-bottom: 5%;
+          padding: 20px 12px;
+          box-sizing: border-box;
+          transition: 0.5s;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          text-align: center;
+}
+.apply-button:hover{
+  border: 1px solid white;
+  background: whitesmoke;
+  transition: 1s;
+}
+ /* Basic styling for the Apply Now button */
+ .apply-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Styling for the application form */
+.application-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for form inputs and submit button */
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form textarea,
+.application-form input[type="submit"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.application-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="css/website.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.css"
     />
   </head>
   <body>
@@ -48,6 +52,10 @@
       <div class="row">
         <div class="about-col">
           <h1>Welcome</h1>
+          <p><!-- Button to trigger the application process -->
+            <button class="apply-button" id="applyButton">Apply Now</button>
+        
+            <!----APPLY NOW----></p>
           <p>This is the Information Technology age and at its core is Computer Science. 
             The study of computer science is therefore critical if society is to take full 
             advantage of the benefits Information Technology has to offer and make rapid 
@@ -95,6 +103,23 @@
         department of University of Ghana.
       </p>
     </section>
+    <a href="https://admission.ug.edu.gh/applying/undergraduate/apply-now" class="apply-button">Apply Now (External Link) to know more</a>
+
+    <!-- Application Form on the website -->
+    <div class="comment-box"></div>
+
+    <h3>Leave a comment</h3>
+
+    <form class="comment-form">
+      <input type="text" placeholder="Enter Name" />
+      <input type="email" placeholder="Enter Email" />
+      <textarea rows="5" placeholder="Your comment"> </textarea>
+      <button type="submit" class="Computer-science red-btn">
+        POST COMMENT
+      </button>
+    </form>
+  </div>
+</section>
     <!--javascript for Toggle Menu-->
     <script>
       var navLinks = document.getElementById("navLinks");
@@ -104,6 +129,14 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+    </script>
+    <script>
+      // Add an event listener to the Apply Now button
+      document.getElementById('applyButton').addEventListener('click', function() {
+        // You can replace the URL with the actual application link
+        window.location.href = 'https://apply.ug.edu.gh/admissions/undergrad/login';
+        // This will redirect the user to the application page when the button is clicked
+      });
     </script>
  </body>
   </body>

@@ -26,7 +26,7 @@
     <section class="sub-header">
       <nav>
         <a href="website.html"
-          ><img src="images and videos/comScience_logo.png" alt="image"
+          ><img src="images and videos/comScience_logo.png" alt="picture"
         /></a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -44,81 +44,31 @@
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-      <h1>Contact Us</h1>
-    </section>
+      <h1>Apply now</h1>
+      
+        <div class="text-box">
+          <h1>
+            Become a Part of Our Community - Apply Now <br />
+            Ready to Apply? Let's Get Started!
 
-    <!----contact us-->
-
-    <section class="location">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d254105.14546827727!2d-0.3519165303079453!3d5.656172801920918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d35c7bc40fd%3A0x760b35f47b34835d!2sComputer%20Science%20Department%2C%20University%20of%20Ghana!5e0!3m2!1sen!2sgh!4v1700681565842!5m2!1sen!2sgh"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
-    <section class="contact-us">
-      <div class="row">
-        <div class="contact-col">
-          <div>
-            <i class="fa fa-home"></i>
-            <span>
-              <h5>Botanical Gardens Rd, Accra</h5>
-              <p>University of Ghana, legon, LG-365-3652</p>
-            </span>
-          </div>
-          <div>
-            <i class="fa fa-phone"></i>
-            <span>
-              <h5>+233 55 464 0252</h5>
-              <p>Monday to Friday, 10AM to 3pm</p>
-            </span>
-          </div>
-          <div>
-            <i class="fa fa-envelope"></i>
-            <span>
-              <h5>info@doanane@st.ug.edu.gh</h5>
-              <p>Email us our query</p>
-            </span>
-          </div>
+          </h1>
+          <br />
+          
         </div>
-        <div class="contact-col">
-          <form action="form-handler.php" method="post">
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email address"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Enter your subject"
-              required
-            />
-            <textarea
-              rows="8"
-              name="message"
-              placeholder="Message"
-              required
-            ></textarea>
-            <button type="submit" class="Computer-science red-btn">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
     </section>
+    <div>
+      <!-- Button to trigger the application process -->
+    <button class="apply-button" id="applyButton">Apply Now</button>
+
+    <!----APPLY NOW---->
+  </div>
+    </section>
+    
+<br />
+<br />
+<br />
+<br />
+<br >
 
     <section class="footer">
       <h4>About Us</h4>
@@ -145,6 +95,17 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+    </script>
+    <script>
+      // Add an event listener to the Apply Now button
+      document
+        .getElementById("applyButton")
+        .addEventListener("click", function () {
+          // You can replace the URL with the actual application link
+          window.location.href =
+            "https://apply.ug.edu.gh/admissions/undergrad/login";
+          // This will redirect the user to the application page when the button is clicked
+        });
     </script>
   </body>
 </html>
