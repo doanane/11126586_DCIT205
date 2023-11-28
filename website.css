@@ -208,7 +208,7 @@ h3{
 
 .slide {
   
-    max-width: 100%;max-width: 100%; /* Set a specific width */
+    max-width: 100%; /* Set a specific width */
     height: auto;
   flex: 0 0 auto; /* Let the images have their natural width */
   margin-right: 0; /* Remove default margin */
@@ -219,7 +219,7 @@ h3{
 }
 
 .slide img {
-  width: 100%; /* Ensure the images take up 100% of the slide container */
+  max-width: 100%; /* Ensure the images take up 100% of the slide container */
   height: auto;
 }
 
