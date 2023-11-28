@@ -563,3 +563,29 @@ background: #f0f0f0;
 .event-container img{
   width: 60%;
 }
+.done{
+  background-color: #007bff;
+  color: blueviolet;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  min-height: 100vh;;
+  background-image: linear-gradient(#4747ad5e,rgba(196, 206, 218, 0.26)),url(images\ and\ videos/image11.jpg);
+  background-position: center;
+  background-size: coverr;
+  position: relative; 
+}
+.programmes{
+  width: 100%;
+padding: 10px;
+margin: 15px;
+box-sizing: border-box;
+border: none;
+outline: none;
+background-image: linear-gradient(#4747ad5e,rgba(196, 206, 218, 0.26)),url(images\ and\ videos/image10.jpg);
+
+background: #f0f0f0;
+}
+.logo{
+  width: 60%;
+}

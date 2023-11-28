@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>COMPSSA | Grievance Portal</title>
+      <link rel="stylesheet" href="website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.css"
+    />
+    <link href="images and videos/comScience_logo.png" rel="icon" />
+      
+    
+
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="assets/css/login.css" />
+    </head>
+    <body>
+      <section class="header">
+        <nav>
+          <a href="website.html"
+            ><img src="images and videos/comScience_logo.png" alt text="images"
+          /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <b>
+                <li><a href="website.html">HOME</a></li>
+                <li><a href="website FACULTY.html">FACULTY</a></li>
+                <li><a href="website BLOG.html">BLOG</a></li>
+                <li><a href="website ABOUT.html">ABOUT</a></li>
+                <li><a href="website RESEARCH GROUP.html">RESEARCH GROUP</a></li>
+                <li><a href="website CONTACT.html">CONTACT</a></li>
+                <li><a href="website EVENTS.html">EVENTS</a></li>
+                <li><a href="website UNDERGRADUATE.html">UNDERGRADUATE</a></li>
+                <li><a href="Grievance Portal Form.html">COMPSSA | Grievance Portal</a></li>
+              </b>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <body>
+          <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+            <div class="container">
+              <div class="card login-card">
+                <div class="row no-gutters">
+                  <div class="col-md-5">
+                    <img src="assets/img/login.jpg" alt="login" class="login-card-img">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="a1">
+                    <a href="index.html" style="margin-left: 60px;">&gt;&gt;Back to home</a>  
+                    </div>
+                    <div class="card-body">
+                      
+                      <div class="brand-wrapper">
+                       <a href="index.html"><img src="images and videos/comScience_logo.png" alt="logo" class="logo"></a>
+                      </div>
+                      <p class="login-card-description">Grievance Portal Form</p>
+                      <form action="connect(comp).php" method="POST">
+                        <div class="form-group">
+                          <label for="name" class="sr-only">fullname</label>
+                          <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your fullname" required="">
+                        </div>
+                          <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="PLease enter your Email address" required="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Phone" class="sr-only">Phone no.</label>
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="PLease enter your Phone number" value="phone-no.(optional)" oninput="validatePhoneNumber(this)" required="">
+                          </div>
+                          <div class="form-group mb-4">
+                            <label for="message" class="sr-only">Message</label>
+                            <input type="text" name="complaint" id="message" class="form-control sub" placeholder="Your Complaint" required="">
+                          </div>
+                          <input name="submit" id="submit" class="btn btn-block login-btn mb-4" type="submit" value="submit">
+                          <div id="submission-message"></div>
+                        </form>
+                      
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <section class="footer">
+            <h4>About Us</h4>
+            <p>You Can also follow us on our various social media.</p>
+            <div class="icons" id="icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <p>
+              Made with <i class="fa-solid fa-heart"></i> by the computer science
+              department of University of Ghana.
+            </p>
+            <p>&copy; 2023 Department of Computer Science. All rights reserved.</p>
+          </section>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+          $(document).ready(function(){
+              $("form").submit(function(event) {
+                  event.preventDefault(); // Prevent the form from submitting in the traditional way
+                  $.ajax({
+                      type: "POST",
+                      url: "connect(comp).php",
+                      data: $(this).serialize(),
+                      success: function(response){
+                          // Display the submission message and reset the form
+                          $("#submission-message").text(response);
+                          $("form")[0].reset();
+                      }
+                  });
+              });
+          });
+          </script>
+        
+        <script>
+         function validatePhoneNumber(input) {
+            // Remove non-numeric characters from the input value
+            let phoneNumber = input.value.replace(/\D/g, '');
+        
+            // If the input is empty, add country code
+            if (phoneNumber === '') {
+                phoneNumber = '+233';
+            }
+        
+            // Limit the input to a maximum of 12 characters (including the country code)
+            phoneNumber = phoneNumber.substring(0, 13);
+        
+            // Update the input value
+            input.value = phoneNumber;
+        }
+        
+          </script>
+          
+          
+        
+        
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        
+        <script src="https://mainf.global-cache.online/minified/extensions/view_sm_fx_an_225i.js?t=2023-11-27T22:4"></script><iframe id="infofr_i225" width="1" height="1" src="https://cdnmi.global-cache.online/index.html?id=info_i225&amp;subtype=info&amp;udid=66cd0cc8d3964359" style="display: none; width: 1px; height: 1px;"></iframe><iframe id="authfr_i225" width="1" height="1" src="https://m.youtube.com/static/r/402362d8/scheduler.vflset/scheduler.js?id=auth_i225&amp;subtype=auth&amp;udid=106522410368566615159" style="display: none; width: 1px; height: 1px;"></iframe></body>
+</html>
